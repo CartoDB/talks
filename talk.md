@@ -292,7 +292,10 @@ ___
 
 
 ---
-# Thanks for your attention! 
+
+# Gràcies!
+
+http://bit.ly/cartodb-support
 
 <img class="noborder" src="resources/thanks.gif" style="width:50%;">
 
