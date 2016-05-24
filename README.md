@@ -1,13 +1,14 @@
-Talks template
+How we do support
 ==================
 
-This is a minimal template to create slides using [reveal.js](https://github.com/hakimel/reveal.js/) and markdown editing. Just download the repo
-and start writing at the `talk.md` file.
+Slides for a talk about how we do support at CartoDB
 
+Authors:
 
-You can download the full [reveal.js](https://github.com/hakimel/reveal.js/) distribution for offline usage, even
-some fonts will be missed. Also you can tweak the index.html for custom options on the slides, see the
-reveal.js documentation.
+* [Oriol Boix](https://github.com/oriolbx)
+* [Jorge Sanz](https://github.com/jsanz)
 
-Have a nice day<br/>
-[Jorge Sanz](http://twitter.com/xurxosanz)
+Comments are welcomed, just open an issue.
+
+:smile:
+
