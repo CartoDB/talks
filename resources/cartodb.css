@@ -320,3 +320,18 @@ body {
 .reveal section img {
   border:none;
 }
+
+.reveal .slides section .fragment.highlight-orange,
+.reveal .slides section .fragment.highlight-current-orange {
+  opacity: 1;
+  visibility: visible; }
+
+.reveal .slides section .fragment.highlight-orange.visible {
+  color: #e7ad52; }
+
+.reveal .slides section .fragment.highlight-current-orange.current-fragment {
+  color: #e7ad52; }
+
+.reveal .slides section strong{
+  color: #e7ad52;
+}
