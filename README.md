@@ -1,14 +1,7 @@
-How we do support
-==================
+Talks
+===============
 
-Slides for a talk about how we do support at CartoDB
+Public repository for slides on talks we deliver, more likely using HTML.
 
-Authors:
-
-* [Oriol Boix](https://github.com/oriolbx)
-* [Jorge Sanz](https://github.com/jsanz)
-
-Comments are welcomed, just open an issue.
-
-:smile:
-
+Have a great day!
+ 
