@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CARTO Talks</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+
+    <style>
+    @media (max-width: 1000px) {
+        .center{}
+        .center-inner{
+            left:25%;
+            top:25%;
+            position:absolute;
+            width:50%;
+            height:300px;
+            background:rgba(197, 196, 196, 0.26);
+            text-align:center;
+            max-width:500px;
+            max-height:500px;}
+    }
+    @media (min-width: 1000px) {
+        .center{
+            left:50%;
+            top:25%;
+            position:absolute;}
+        .center-inner{
+            padding: 25px;
+            width:700px;
+            height:100%;
+            margin-left:-250px;
+            height:300px;
+            background:rgba(197, 196, 196, 0.26);
+            text-align:center;
+            max-width:700px;
+            max-height:500px;}
+    }
+    
+    #slides li{
+        text-align: left;
+    }
+    </style>
+</head>
+<body>
+<div class="center">
+<div class="center-inner"  id="slides">
+    <h1>CARTO Talks</h1>
+    <ul>
+        <li v-for="talk in talks">
+            <a :href="talk.folder">{{talk.title}}</a> · {{talk.event}}
+        </li>
+    </ul>
+</div>      
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+    new Vue({
+        el : '#slides',
+        data : {
+            talks: [
+                {
+                    folder: '1605-siglibre-support',
+                    title:  'How we do support',
+                    event:  'SIG LIBRE 2016'
+                },{
+                    folder: '1609-data-services',
+                    title:  'SQL all the things',
+                    event:  'State of the Map 2016'
+                },{
+                    folder: '1610-dataservices',
+                    title:  'Location Data Services',
+                    event:  'CartoCamp 2016'
+                },{
+                    folder: '1612-postman',
+                    title:  'Postman training',
+                    event:  'Internal'
+                },{
+                    folder: '1703-zappa',
+                    title:  'Creating proxies for non standard APIs',
+                    event:  'Internal'
+                },{
+                    folder: '1704-cli',
+                    title:  'How I use the command line',
+                    event:  'Internal'
+                },{
+                    folder: '1708-foss4g-solutions',
+                    title:  'Solutions Engineering at CARTO',
+                    event:  'FOSS4G 2017'
+                },{
+                    folder: '1710-idemenorca',
+                    title:  'Las nuevas fuentes de datos de localización',
+                    event:  'Jornada IDE Menorca 2017'
+                }                
+            ]
+        }
+    });
+</script>
+</body>
+</html>
