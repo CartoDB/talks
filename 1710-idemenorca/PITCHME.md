@@ -240,7 +240,15 @@ Note:
 
 ---
 
-![](imgs/strava-profile.png)
+## Actividad
+
+![](imgs/strava-molieres.png)
+
+---
+
+## Grupos
+
+![](imgs/strava-cartocachas.png)
 
 ---
 
