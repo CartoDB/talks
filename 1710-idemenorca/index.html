@@ -7,7 +7,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../resources/reveal.js/reveal.js-3.5.0/css/reveal.css">
+
+    <!-- Reveal Theme -->
     <link rel="stylesheet" href="../resources/carto/carto.css" id="theme">
+    <link rel="stylesheet" href="../resources/reveal.js/css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../resources/reveal.js/reveal.js-3.5.0/lib/css/zenburn.css">
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
@@ -17,9 +23,11 @@
       <script src="revealjs/lib/js/html5shiv.js"></script>
     <![endif]-->
 
-
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="../resources/reveal.js/reveal.js-3.5.0/lib/css/zenburn.css">
+    <!-- live reload tooling -->
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+      ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
   </head>
 
   <body>

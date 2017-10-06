@@ -15,9 +15,13 @@
 
 .reveal section img{
     max-width: 90%;
-    max-height: 500px;
+    max-height: 400px;
 }
 
 .reveal.cube .slides section.light-background:not(.stack):before{
     background: rgba(22,41,69,0.5);
+}
+
+.reveal.cube .slides section.dark-background:not(.stack):before{
+    background: rgba(22,41,69,0.8);
 }
