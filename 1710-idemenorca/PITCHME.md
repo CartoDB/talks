@@ -252,6 +252,8 @@ Note:
 
 ---
 
+## Mapa de calor de actividad
+
 [![](imgs/strava-alaior.png)](http://labs.strava.com/heatmap/#14/4.13215/39.92916/blue/run)
 
 ---
