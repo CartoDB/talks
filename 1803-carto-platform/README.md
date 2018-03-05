@@ -1,11 +1,16 @@
-Las nuevas fuentes de datos de localización
+CARTO as a Platform
 =============================================
 
-Talk (in Spanish) for the [IV Jornades d'Informació Geogràfica de Menorca](http://cartografia.cime.es/jornades.aspx).
+Talk about the status of CARTO ENGINE at the beginning of 2018, main components and plans for this year.
+
+Presented at
+
+* [FOSS4G UK 2018](http://uk.osgeo.org/foss4guk2018/)
 
 Author:
 
 * [Jorge Sanz](https://github.com/jsanz)
+* ...
 
 Comments are welcomed, just open an issue.
 
