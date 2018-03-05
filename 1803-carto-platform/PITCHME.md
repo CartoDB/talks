@@ -18,7 +18,7 @@
 
 Jorge Sanz · jorge@carto.com · 2018-03-09
 
-[bit.ly/1803-carto-platform](http://1803-carto-platform)
+[bit.ly/1803-carto-platform](http://bit.ly/1803-carto-platform)
 
 <img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);border:0px solid black;">
 
@@ -141,6 +141,6 @@ Note:
 
 Jorge Sanz · jorge@carto.com · 2018-03-09
 
-[bit.ly/1803-carto-platform](http://1803-carto-platform)
+[bit.ly/1803-carto-platform](http://bit.ly/1803-carto-platform)
 
 <img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);border:0px solid black;">
