@@ -48,7 +48,7 @@ CARTO is an offering for organizations and individuals to obtain value from geos
 
 ___
 
-<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
 
 ![](imgs/github-1.png)
 
@@ -59,7 +59,7 @@ Note:
 But CARTO is also an Open Source effort, we develop CARTO in our GitHub organization, and these are the main repositories. Let's take a look to the main repository statistics.
 ___
 
-<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
 
 `CartoDB/cartodb` metrics
 
@@ -72,7 +72,7 @@ Overview of the last month, with 76 pull requests merged and 15 in the works.
 Side note, we had 340 closed issues because we deployed a bot to get rid of the inactive ones.
 ___
 
-<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
 
 `CartoDB/cartodb` metrics
 
@@ -84,7 +84,7 @@ Contributions to master since 2011
 
 ___
 
-<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
 
 `CartoDB/cartodb` metrics
 
@@ -97,9 +97,9 @@ Note:
 Commits to any branch over the last year
 ___
 
-<img style="width:20%;float:left;" src="https://images.ctfassets.net/xts27qnup0jr/3dMKD6ZsJWaYm0uQE4MYsU/40b489f65a3e8424e1365bda80223386/andrewbt.jpg">
+<img class="no-border" style="width:20%;" src="https://images.ctfassets.net/xts27qnup0jr/3dMKD6ZsJWaYm0uQE4MYsU/40b489f65a3e8424e1365bda80223386/andrewbt.jpg">
 
-<blockquote style="width:80%;"><p lang="en" dir="ltr">22 Pull Requests. That&#39;s how many <a href="https://twitter.com/CARTO?ref_src=twsrc%5Etfw">@CARTO</a> teammates have made to non-CARTO-owned open source projects in roughly the last month, including <a href="https://twitter.com/mapnikproject?ref_src=twsrc%5Etfw">@mapnikproject</a> , <a href="https://twitter.com/postgis?ref_src=twsrc%5Etfw">@postgis</a> and <a href="https://twitter.com/OSGeo?ref_src=twsrc%5Etfw">@OSGeo</a> projects. Glad to be at a company that practices open source!</p>&mdash; Andrew Thompson (@andrewbt) <a href="https://twitter.com/andrewbt/status/971523061517348864?ref_src=twsrc%5Etfw">March 7, 2018</a></blockquote>
+<blockquote style="width:80%;font-size:smaller;"><p lang="en" dir="ltr">22 Pull Requests. That&#39;s how many <a href="https://twitter.com/CARTO?ref_src=twsrc%5Etfw">@CARTO</a> teammates have made to non-CARTO-owned open source projects in roughly the last month, including <a href="https://twitter.com/mapnikproject?ref_src=twsrc%5Etfw">@mapnikproject</a> , <a href="https://twitter.com/postgis?ref_src=twsrc%5Etfw">@postgis</a> and <a href="https://twitter.com/OSGeo?ref_src=twsrc%5Etfw">@OSGeo</a> projects. Glad to be at a company that practices open source!</p>&mdash; Andrew Thompson (@andrewbt) <a href="https://twitter.com/andrewbt/status/971523061517348864?ref_src=twsrc%5Etfw">March 7, 2018</a></blockquote>
 
 ___
 
@@ -117,6 +117,8 @@ ___
 <!-- .element data-background="../resources/images/carto-retreat.jpg" class="only-background"-->
 
 ___
+
+<!-- .element data-background="../resources/images/josh-bean-348474-unsplash.jpg" class="only-background"-->
 
 # CARTO portfolio
 
@@ -148,6 +150,8 @@ Note:
 <!-- .element data-background="../resources/carto/wallpapers/location-red.png" class="only-background"-->
 
 ---
+
+<!-- .element data-background="../resources/carto/wallpapers/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
 
 # **ENGINE**
 
@@ -437,4 +441,5 @@ Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
 [bit.ly/1803-carto-platform](http://bit.ly/1803-carto-platform)
 
-<img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);border:0px solid black;">
+<img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);
+:0px solid black;">
