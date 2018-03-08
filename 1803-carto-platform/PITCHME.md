@@ -16,7 +16,7 @@
 
 <!-- .element style="font-size:1.7em"-->
 
-Jorge Sanz · jorge@carto.com · 2018-03-09
+Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
 [bit.ly/1803-carto-platform](http://bit.ly/1803-carto-platform)
 
@@ -45,7 +45,10 @@ First, we’ll focus on the APIs and Location Data Services offered by CARTO and
 Note:
 
 CARTO is an offering for organizations and individuals to obtain value from geospatial information. That offering is formed by technology stack that will review in a minute.
+
 ___
+
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
 
 ![](imgs/github-1.png)
 
@@ -422,7 +425,7 @@ ___
 
 ## Thanks!
 
-Jorge Sanz · jorge@carto.com · 2018-03-09
+Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
 [bit.ly/1803-carto-platform](http://bit.ly/1803-carto-platform)
 
