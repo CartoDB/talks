@@ -59,6 +59,8 @@ Note:
 But CARTO is also an Open Source effort, we develop CARTO in our GitHub organization, and these are the main repositories. Let's take a look to the main repository statistics.
 ___
 
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
+
 `CartoDB/cartodb` metrics
 
 ![](imgs/github-2.png)
@@ -70,6 +72,8 @@ Overview of the last month, with 76 pull requests merged and 15 in the works.
 Side note, we had 340 closed issues because we deployed a bot to get rid of the inactive ones.
 ___
 
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
+
 `CartoDB/cartodb` metrics
 
 ![](imgs/github-3.png)
@@ -79,6 +83,8 @@ Note:
 Contributions to master since 2011
 
 ___
+
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" class="only-background"-->
 
 `CartoDB/cartodb` metrics
 
@@ -90,6 +96,8 @@ Note:
 
 Commits to any branch over the last year
 ___
+
+<img style="width:20%;float:left;" src="https://images.ctfassets.net/xts27qnup0jr/3dMKD6ZsJWaYm0uQE4MYsU/40b489f65a3e8424e1365bda80223386/andrewbt.jpg">
 
 <blockquote style="width:80%;"><p lang="en" dir="ltr">22 Pull Requests. That&#39;s how many <a href="https://twitter.com/CARTO?ref_src=twsrc%5Etfw">@CARTO</a> teammates have made to non-CARTO-owned open source projects in roughly the last month, including <a href="https://twitter.com/mapnikproject?ref_src=twsrc%5Etfw">@mapnikproject</a> , <a href="https://twitter.com/postgis?ref_src=twsrc%5Etfw">@postgis</a> and <a href="https://twitter.com/OSGeo?ref_src=twsrc%5Etfw">@OSGeo</a> projects. Glad to be at a company that practices open source!</p>&mdash; Andrew Thompson (@andrewbt) <a href="https://twitter.com/andrewbt/status/971523061517348864?ref_src=twsrc%5Etfw">March 7, 2018</a></blockquote>
 
