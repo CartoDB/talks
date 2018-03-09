@@ -150,7 +150,7 @@ Note:
 
 ---
 
-<!-- .element data-background="../resources/images/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
 
 # **ENGINE**
 
@@ -207,11 +207,11 @@ Note:
 
 ---
 
+<!-- .element data-background="../resources/images/markus-spiske-109588-unsplash.jpg" class="only-background" -->
+
 ![](imgs/apis.png)
 
 ___
-
-<!-- .element data-background="../resources/images/markus-spiske-109588-unsplash.jpg" -->
 
 ## SQL API
 
@@ -228,8 +228,6 @@ Note:
 The SQL API is a thin wrapper around the database to allow you to interact with your account basically as if you had direct access to it. You can also use it as an export API to extract full tables or processed datasets.
 
 ___
-
-<!-- .element data-background="../resources/images/markus-spiske-109588-unsplash.jpg" -->
 
 ## Import API
 
@@ -316,6 +314,10 @@ ___
 <!-- .element data-background="../resources/images/thomas-kelley-136961-unsplash.jpg" -->
 
 ![](imgs/do-uk.png)
+
+Consumer Data Research Centre · Northern Ireland Statistics and Research Agency · Office for National Statistics (ONS) · Scotland’s Census Data Warehouse by National Records of Scotland
+
+<!-- .element style="font-size:small;" -->
 
 ___
 
