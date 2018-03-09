@@ -317,7 +317,7 @@ ___
 
 Consumer Data Research Centre · Northern Ireland Statistics and Research Agency · Office for National Statistics (ONS) · Scotland’s Census Data Warehouse by National Records of Scotland
 
-<!-- .element style="font-size:small;" -->
+<!-- .element style="" -->
 
 ___
 
