@@ -150,7 +150,7 @@ Note:
 
 ---
 
-<!-- .element data-background="../resources/carto/wallpapers/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
 
 # **ENGINE**
 
@@ -211,7 +211,7 @@ Note:
 
 ___
 
-<!-- .element data-background="../resources/carto/wallpapers/markus-spiske-109588-unsplash.jpg" -->
+<!-- .element data-background="../resources/images/markus-spiske-109588-unsplash.jpg" -->
 
 ## SQL API
 
@@ -229,7 +229,7 @@ The SQL API is a thin wrapper around the database to allow you to interact with 
 
 ___
 
-<!-- .element data-background="../resources/carto/wallpapers/markus-spiske-109588-unsplash.jpg" -->
+<!-- .element data-background="../resources/images/markus-spiske-109588-unsplash.jpg" -->
 
 ## Import API
 
@@ -313,7 +313,7 @@ ___
 https://github.com/CartoDB/bigmetadata
 ___
 
-<!-- .element data-background="../resources/carto/wallpapers/thomas-kelley-136961-unsplash.jpg" -->
+<!-- .element data-background="../resources/images/thomas-kelley-136961-unsplash.jpg" -->
 
 ![](imgs/do-uk.png)
 
