@@ -230,6 +230,8 @@ The SQL API is a thin wrapper around the database to allow you to interact with 
 
 ___
 
+<!-- .element data-background="../resources/carto/wallpapers/markus-spiske-109588-unsplash.jpg" -->
+
 ## Import API
 
 ```
@@ -278,8 +280,11 @@ Note:
 Here we have a cURL request to get the coordinates of the Conference Venue based in the postal address. I hope that's correct!
 
 ___
+
 <!-- .element data-background="imgs/routing.png" class="only-background"-->
 ___
+
+<!-- .element data-background="../resources/images/lena-bell-68534-unsplash.jpg" class="only-background"-->
 
 ## Maps API
 
@@ -290,7 +295,7 @@ ___
   * **Public** and **Private** data
 * Supports **TileJSON** format
 * **Aggregations** on the fly
-* **CartoCSS** to define your cartography styles
+* **CartoCSS** and **TurboCARTO** for cartography styles
 
 ___
 
@@ -309,8 +314,13 @@ ___
 https://github.com/CartoDB/bigmetadata
 ___
 
+<!-- .element data-background="../resources/carto/wallpapers/thomas-kelley-136961-unsplash.jpg" -->
+
 ![](imgs/do-uk.png)
+
 ___
+
+<!-- .element data-background="../resources/carto/wallpapers/thomas-kelley-136961-unsplash.jpg" -->
 
 ![](imgs/do-uk-2.png)
 
