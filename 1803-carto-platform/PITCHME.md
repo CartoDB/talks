@@ -319,7 +319,7 @@ ___
 
 ___
 
-<!-- .element data-background="../resources/carto/wallpapers/thomas-kelley-136961-unsplash.jpg" -->
+<!-- .element data-background="../resources/images/thomas-kelley-136961-unsplash.jpg" -->
 
 ![](imgs/do-uk-2.png)
 
