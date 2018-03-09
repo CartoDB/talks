@@ -283,7 +283,7 @@ ___
 <!-- .element data-background="imgs/routing.png" class="only-background"-->
 ___
 
-<!-- .element data-background="../resources/images/lena-bell-68534-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/lena-bell-68534-unsplash.jpg" -->
 
 ## Maps API
 
@@ -339,6 +339,8 @@ Still, we have a nice interface in BUILDER, remember no SQL needed :-)
 <!-- .element data-background="../resources/carto/wallpapers/location-red.png" class="only-background"-->
 
 ---
+
+<!-- .element data-background="../resources/images/giammarco-boscaro-380903-unsplash.jpg" class="only-background"-->
 
 ![](imgs/libraries.png)
 
