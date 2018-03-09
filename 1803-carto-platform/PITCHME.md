@@ -39,7 +39,6 @@ First, we’ll focus on the APIs and Location Data Services offered by CARTO and
 
 <!-- .element data-background="../resources/images/city.png" class="only-background"-->
 
-
 ### **CARTO** IS THE PLATFORM FOR TURNING LOCATION DATA INTO BUSINESS OUTCOMES
 
 Note:
@@ -442,10 +441,13 @@ ___
 
 ---
 
+<!-- .element data-background="../resources/images/city.png"  -->
+
 ![](https://media.giphy.com/media/y8fXirTJjj6E0/giphy.gif)
 
-
 ___
+
+<!-- .element data-background="../resources/images/city.png" -->
 
 ## Thanks!
 
@@ -453,5 +455,4 @@ Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
 [bit.ly/1803-carto-platform](http://bit.ly/1803-carto-platform)
 
-<img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);
-:0px solid black;">
+<img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);border:0px solid black;">
