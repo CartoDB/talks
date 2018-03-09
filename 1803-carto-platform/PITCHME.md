@@ -212,6 +212,8 @@ Note:
 
 ___
 
+<!-- .element data-background="../resources/carto/wallpapers/markus-spiske-109588-unsplash.jpg" -->
+
 ## SQL API
 
 [https://{user}.carto.com/api/v2/sql?q={query}](https://jsanz.carto.com/api/v2/sql?q=SELECT+name,pop_max+FROM+populated_places+ORDER+BY+pop_max+DESC+LIMIT+5)
