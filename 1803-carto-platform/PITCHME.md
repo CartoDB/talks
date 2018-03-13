@@ -49,6 +49,7 @@ ___
 
 <!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
 
+
 ![](imgs/github-1.png)
 
 [github.com/CartoDB](https://github.com/CartoDB)
@@ -73,6 +74,7 @@ ___
 
 <!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
 
+
 `CartoDB/cartodb` metrics
 
 ![](imgs/github-3.png)
@@ -83,7 +85,8 @@ Contributions to master since 2011
 
 ___
 
-<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->Santos</a></p>
+
 
 `CartoDB/cartodb` metrics
 
@@ -119,6 +122,7 @@ ___
 
 <!-- .element data-background="../resources/images/josh-bean-348474-unsplash.jpg" class="only-background"-->
 
+
 # CARTO portfolio
 
 ## BUILDER + **ENGINE**
@@ -151,6 +155,7 @@ Note:
 ---
 
 <!-- .element data-background="../resources/images/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
+
 
 # **ENGINE**
 
@@ -344,6 +349,7 @@ Still, we have a nice interface in BUILDER, remember no SQL needed :-)
 
 <!-- .element data-background="../resources/images/giammarco-boscaro-380903-unsplash.jpg" class="only-background"-->
 
+
 ![](imgs/libraries.png)
 
 ___
@@ -460,3 +466,16 @@ Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 [bit.ly/1803-carto-platform](http://bit.ly/1803-carto-platform)
 
 <img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);border:0px solid black;">
+
+___
+
+## Pictures attributions
+
+<ul>
+<li><a href="https://unsplash.com/photos/9SoCnyQmkzI">Jefferson Santos</a></li>
+<li><a href="https://unsplash.com/photos/Gecsh_1GOz4">Josh Bean</a></li>
+<li><a href="https://unsplash.com/photos/HFG53IIJ8y0">Igor Ovsyannykov</a></li>
+<li><a href="https://unsplash.com/photos/mluSdDeOksc">Lena Bell</a></li>
+<li><a href="https://unsplash.com/photos/iPt41beW5rs">Thomas Kelley</a></li>
+<li><a href="https://unsplash.com/photos/OPzWvgL-upY">Giammarco Boscaro</a></li>
+</ul>
