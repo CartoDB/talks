@@ -85,7 +85,7 @@ Contributions to master since 2011
 
 ___
 
-<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->Santos</a></p>
+<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
 
 
 `CartoDB/cartodb` metrics
