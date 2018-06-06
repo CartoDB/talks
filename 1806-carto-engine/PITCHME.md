@@ -8,9 +8,7 @@
 | `Esc`                      | overview |
 | `F`                        | full screen |
 
-
 ---
-
 
 # CARTO ENGINE 2018
 
@@ -30,60 +28,12 @@ CARTO is a successful service and Open Source product stack used by organization
 
 ---
 
-<!-- .element data-background="../resources/carto/wallpapers/prediction-blue.png"  class="only-background"-->
-
----
-
-<!-- .element data-background="../resources/images/city.png" class="only-background"-->
-
-<h3>
-<strong>CARTO</strong> is the platform<br> 
-for turning location data<br>
- into business outcomes
-</h3>
-
-Note:
-
-CARTO is an offering for organizations and individuals to obtain value from geospatial information. That offering is formed by technology stack that will review in a minute.
-
-___
-
-<!-- .element data-background="../resources/images/jefferson-santos-450403-unsplash.jpg" -->
-
-## Open Source
-
-![](../1803-carto-platform/imgs/github-1.png)
-
-[github.com/CartoDB](https://github.com/CartoDB)
-
-Note:
-
-But CARTO is also an Open Source effort, we develop CARTO in our GitHub organization, and these are the main repositories. Let's take a look to the main repository statistics.
-___
-
-<img class="no-border" style="width:20%;" src="https://images.ctfassets.net/xts27qnup0jr/3dMKD6ZsJWaYm0uQE4MYsU/40b489f65a3e8424e1365bda80223386/andrewbt.jpg">
-
-<blockquote style="width:80%;font-size:smaller;"><p lang="en" dir="ltr">22 Pull Requests. That&#39;s how many <a href="https://twitter.com/CARTO?ref_src=twsrc%5Etfw">@CARTO</a> teammates have made to non-CARTO-owned open source projects in roughly the last month, including <a href="https://twitter.com/mapnikproject?ref_src=twsrc%5Etfw">@mapnikproject</a> , <a href="https://twitter.com/postgis?ref_src=twsrc%5Etfw">@postgis</a> and <a href="https://twitter.com/OSGeo?ref_src=twsrc%5Etfw">@OSGeo</a> projects. Glad to be at a company that practices open source!</p>&mdash; Andrew Thompson (@andrewbt) <a href="https://twitter.com/andrewbt/status/971523061517348864?ref_src=twsrc%5Etfw">March 7, 2018</a></blockquote>
-
-___
-
-<!-- .element data-background="../resources/images/carto-team-map.png" class="only-background"-->
-
-___
-
-<!-- .element data-background="../resources/images/carto-retreat.jpg" class="only-background"-->
-
-
----
-
-<!-- .element data-background="../resources/carto/wallpapers/location-red.png" class="only-background"-->
+<!-- .element data-background="../resources/carto/wallpapers/navy-blue.png" class="only-background"-->
 
 ---
 
 <!-- .element data-background="../resources/images/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
 
-
-# **ENGINE**
 
 ![](../resources/images/carto-stack.png) <!-- .element style="width:800px;" -->
 
@@ -96,7 +46,14 @@ The technology stack in CARTO is like this,
 * above we have the web and caching servers and in our cloud, a smart CDN that makes maps fast and easy to consume even on demanding scenarios like election maps
 * at the user level, besides BUILDER we have the different clients and development kits to interact with the platform as we'll see later.
 
-___
+---
+
+![](imgs/dev-center.png)
+
+https://carto.com/developers/
+
+
+---
 
 <!-- .element data-background="../resources/images/lena-bell-68534-unsplash.jpg" -->
 
@@ -106,21 +63,17 @@ ___
 * Supports **TileJSON** format
 * Smart **aggregations** on the fly
 
-___
+---
 
 ![](imgs/maps-api.png)
 
 [Demo: Maps API, vector tiles and Mapbox.GL](https://codepen.io/jsanz/pen/mXbVXd?)
 
-___
+---
 
 ![](imgs/maps-api-2.png)
 
 [Demo: Maps API, smart aggregation and CARTO.js 4](https://codepen.io/jsanz/pen/yvebrg?editors=0010)
-
----
-
-<!-- .element data-background="../resources/carto/wallpapers/navy-blue.png" class="only-background"-->
 
 ---
 
@@ -131,52 +84,97 @@ ___
 * **Jupyter** and **Pandas** are becoming standards for Data Scientists
 * We want them to use CARTO without leaving their tools
 * Pandas **DataFrame** integration and **Leaflet** inside Jupyter
-___
+---
 
 ![](../1803-carto-platform/imgs/cartoframes-1.png)
 
 [Example](http://nbviewer.jupyter.org/github/CartoDB/carto-workshop/blob/master/06-sdks/exercises/python_SDK/CARTO_Frames.ipynb)
-___
+---
 
 ![](../1803-carto-platform/imgs/cartoframes-2.png)
 
 [Example](http://nbviewer.jupyter.org/github/CartoDB/carto-workshop/blob/master/06-sdks/exercises/python_SDK/CARTO_Frames.ipynb)
-___
+
+---
 
 ## CARTO.js
 
-* https://github.com/cartodb/cartodb.js/tree/v4 (to be relased soon)
+* https://github.com/CartoDB/carto.js
 * **Low-level** approach, dev friendly and easier to integrate
 * Supports **Leaflet** and **Google Maps**
 * Focused in **raster** tiles
 * **Dataviews** (widgets model), dynamic **legends** and **metadata**
 * New [documentation](https://carto.com/documentation/cartojs/) with full [API](https://cartodb.github.io/documentation/carto-js/reference/) and examples
 
-___
+---
 
 ![](https://carto.com/blog/img/posts/2018/2018-01-12-cartojs-and-react/final.20fd83c0.gif)
 
 https://carto.com/blog/inside/cartojs-and-react/
 
----
-
-<!-- .element data-background="../resources/carto/wallpapers/prediction-blue.png"  class="only-background"-->
-
-___
-
-![](imgs/dev-center.png)
-
-https://carto.com/developers/
 
 ---
 
+## CARTO VL
+
+* https://github.com/CartoDB/carto-vl
+* **Vector** rendering JavaScript library
+* Fully **integrated** with CARTO ENGINE
+* New **styling** language
+* **Animations** for points, lines and polygons
+* Can work on top of **Mapbox GL**
+* Does not replace **CARTO.js**
+* **Beta** release!!
+---
+
+### String API
+
+```js
+new carto.Viz(`
+ width: sqrt(SUM($amount))
+ color: ramp(MODE($category), prism)
+`);
+```
+
+### JavaScript API
+
+```js
+new carto.Viz({
+  width: s.sqrt(s.sum(s.prop('amount'))),
+  color: s.ramp(
+    s.mode(s.prop('category')),
+    s.palettes.prism
+  )
+});
+```
+
+---
+
+![](imgs/carto-vl.png)
+
+---
+
+![](imgs/carto-vl-expressions.png)
+
+[Demo: expressions](https://cartodb.github.io/carto-vl/examples/editor/index.html#eyJhIjoiY291bnR5X3BvaW50c193aXRoX3BvcHVsYXRpb25cbiIsImIiOiIiLCJjIjoibWFtYXRhYWtlbGxhIiwiZCI6Imh0dHBzOi8ve3VzZXJ9LmNhcnRvLmNvbSIsImUiOiJ3aWR0aDogc3FydCgkZXN0aW1hdGVfdG90YWwpLzUwXG5zdHJva2VDb2xvcjogcmdiYSgwLDAsMCwwLjMpXG5cblxuXG5cbiIsImYiOnsibG5nIjotOTguMDYwNjg0MjUzNDcxMTUsImxhdCI6MzcuODE5ODQ4NTc5MjUxNDd9LCJnIjozLjYwMjUzODcwMjU2Mzg1NCwiaCI6IkRhcmtNYXR0ZXIifQ==)
+
+---
+
+![](imgs/carto-vl-animated.gif)
+
+[Demo: animated polygons](https://cartodb.github.io/carto-vl/examples/editor/index.html#eyJhIjoidGFibGVfMzAiLCJiIjoiIiwiYyI6ImNhcnRvZ2wiLCJkIjoiaHR0cHM6Ly97dXNlcn0uY2FydG8uY29tIiwiZSI6ImNvbG9yOiBvcGFjaXR5KHJhbXAobGluZWFyKCRzdW1fcXBmLDEsMTIwKSx0ZW1wcyksKCRlX3RvdHBvcC8kYXJlYV9zcW1pKS81MDApXG5maWx0ZXI6IHRvcnF1ZShsaW5lYXIoJHN1bV9xcGYsMTQ0LjUsIDEuNSksNSxmYWRlKDAsMTAwKSkrMC4xXG5zdHJva2VXaWR0aDogMCIsImYiOnsibG5nIjotOTYuMDI4NzY3NjA3MDM5MywibGF0IjozMC4xNTA0MDE1NDE5MDMwNX0sImciOjYuODA1NjkwNTg4OTk2OTI1LCJoIjoiRGFya01hdHRlciJ9)
+
+---
+
+![](imgs/carto-vl-widgets.png)
+
+[Demo: carto-vl + widgets](https://cartovl-airship-hptcvxelnr.now.sh/)
+
+
+---
 <!-- .element data-background="../resources/carto/wallpapers/purple.png" class="only-background"-->
 
-___
-
-# CARTO VL
-
-___
+---
 
 <!-- .element data-background="../resources/images/city.png" -->
 
@@ -188,7 +186,7 @@ Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
 <img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);border:0px solid black;">
 
-___
+---
 
 ## Pictures attributions
 
