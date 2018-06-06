@@ -1,0 +1,72 @@
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a3462+0,25213e+100 */
+    background: rgb(58,52,98); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(58,52,98,1) 0%, rgba(37,33,62,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(58,52,98,1) 0%,rgba(37,33,62,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(58,52,98,1) 0%,rgba(37,33,62,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3462', endColorstr='#25213e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    
+    color: #fff;
+  }
+
+.reveal strong, .reveal b {
+    font-weight: bold;
+    color: #FF00E3;
+}
+.reveal a, .reveal code {
+    color: #03C8C4;
+}
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+ .reveal .controls .navigate-left,
+ .reveal .controls .navigate-left.enabled {
+   border-right-color: #03C8C4; }
+ 
+ .reveal .controls .navigate-right,
+ .reveal .controls .navigate-right.enabled {
+   border-left-color: #03C8C4; }
+ 
+ .reveal .controls .navigate-up,
+ .reveal .controls .navigate-up.enabled {
+   border-bottom-color: #03C8C4; }
+ 
+ .reveal .controls .navigate-down,
+ .reveal .controls .navigate-down.enabled {
+   border-top-color: #03C8C4; }
+ 
+ .reveal .controls .navigate-left.enabled:hover {
+   border-right-color: #C6ACFC; }
+ 
+ .reveal .controls .navigate-right.enabled:hover {
+   border-left-color: #C6ACFC; }
+ 
+ .reveal .controls .navigate-up.enabled:hover {
+   border-bottom-color: #C6ACFC; }
+ 
+ .reveal .controls .navigate-down.enabled:hover {
+   border-top-color: #C6ACFC; }
+ 
+ 
+ .reveal .controls[data-controls-type="bottom-right"] .navigate-right{
+   border-left-color: #03C8C4;
+ }
+ 
+/* locations colors 
+
+fondo gris
+
+back #E9EDEE
+front #2B2648
+
+fondo morado
+
+back #3A3462 a #25213E
+front #FFFFFF
+bold #FF00E3
+
+
+*/

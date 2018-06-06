@@ -10,6 +10,8 @@
 
 ---
 
+<!-- .element data-background="../resources/carto/wallpapers/locations-world.png" -->
+
 # CARTO ENGINE 2018
 
 <!-- .element style="font-size:1.7em"-->
@@ -32,10 +34,8 @@ CARTO is a successful service and Open Source product stack used by organization
 
 ---
 
-<!-- .element data-background="../resources/images/igor-ovsyannykov-252351-unsplash.jpg" class="only-background"-->
+<!-- .element data-background="../resources/images/carto-stack.png" class="only-background"-->
 
-
-![](../resources/images/carto-stack.png) <!-- .element style="width:800px;" -->
 
 Note:
 
@@ -176,9 +176,9 @@ new carto.Viz({
 
 ---
 
-<!-- .element data-background="../resources/images/city.png" -->
+<!-- .element data-background="../resources/carto/wallpapers/locations-world.png" -->
 
-## Thanks!
+## **Thanks!**
 
 Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
