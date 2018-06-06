@@ -18,7 +18,7 @@
 
 Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
-[bit.ly/1806-carto-engine](http://bit.ly/1806-carto-engine)
+[bit.ly/180607-engine](http://bit.ly/180607-engine)
 
 <img src="../resources/carto/logo_CARTO_negative_180.png" style="width:20%;background:rgba(255, 255, 255, 0);border:0px solid black;">
 
@@ -184,7 +184,7 @@ ___
 
 Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) · jorge@carto.com
 
-[bit.ly/1806-carto-engine](http://bit.ly/1806-carto-engine)
+[bit.ly/180607-engine](http://bit.ly/180607-engine)
 
 <img src="../resources/carto/logo_CARTO_negative_180.png" style="width:30%;background:rgba(255, 255, 255, 0);border:0px solid black;">
 
