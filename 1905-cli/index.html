@@ -11776,7 +11776,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="CLI-workshop">CLI workshop<a class="anchor-link" href="#CLI-workshop">&#182;</a></h1><p>CARTO Solutions Technical Workshops</p>
-<p>Jorge Sanz · April 2019</p>
+<p>Jorge Sanz · May 2019</p>
 <hr>
 <blockquote><p>This workshop is intended to show why using a command line interface can be useful on many of our everyday tasks, and more convenient and effective than other graphical interfaces.</p>
 </blockquote>
@@ -11867,6 +11867,38 @@ div#notebook {
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Show system info</span>
+uname -a
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Linux aldaia 4.15.0-47-generic #50-Ubuntu SMP Wed Mar 13 10:44:52 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -11988,6 +12020,47 @@ date +%F<span class="se">\ </span>%T
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1000
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Print disk status</span>
+df -h <span class="p">|</span> grep -v loop
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Filesystem                   Size  Used Avail Use% Mounted on
+udev                         7,8G     0  7,8G   0% /dev
+tmpfs                        1,6G  1,8M  1,6G   1% /run
+/dev/mapper/ubuntu--vg-root  424G  371G   33G  93% /
+tmpfs                        7,8G  156M  7,7G   2% /dev/shm
+tmpfs                        5,0M  4,0K  5,0M   1% /run/lock
+tmpfs                        7,8G     0  7,8G   0% /sys/fs/cgroup
+/dev/sda1                    472M  184M  265M  41% /boot
+tmpfs                        1,6G   52K  1,6G   1% /run/user/1000
+/dev/fuse                    250G  1,0K  250G   1% /run/user/1000/keybase/kbfs
 </pre>
 </div>
 </div>
@@ -12329,12 +12402,12 @@ ls /var/log <span class="p">|</span> wc -l
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Finding all files inside a folder based in their names and types</span>
 <span class="c1"># we redirect errors to the black hole at /dev/null</span>
-find /var/log -type f -name <span class="s2">&quot;*.log*&quot;</span> <span class="m">2</span>&gt; /dev/null <span class="p">|</span> wc -l
+find /var/log -type f -name <span class="s2">&quot;*log*&quot;</span> <span class="m">2</span>&gt; /dev/null <span class="p">|</span> wc -l
 </pre></div>
 
 </div>
@@ -12351,7 +12424,7 @@ find /var/log -type f -name <span class="s2">&quot;*.log*&quot;</span> <span cla
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>170
+<pre>200
 </pre>
 </div>
 </div>
@@ -12541,6 +12614,14 @@ ff02::2 ip6-allrouters
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Silver-Searcher">Silver Searcher<a class="anchor-link" href="#Silver-Searcher">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -12757,6 +12838,7 @@ pygmentize -g /home/jsanz/src/sdks/carto-python/carto/fields.py
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h2><ul>
 <li><a href="http://cartodb.github.io/talks/1704-cli/">Solutions summit 2017 CLI talk</a></li>
+<li><a href="https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/">useful commands to get info about your system</a></li>
 <li><a href="https://www.cyberciti.biz/faq/bash-for-loop/">for loops</a></li>
 <li><a href="https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#introduction">if statements</a></li>
 <li><a href="https://catonmat.net/bash-one-liners-explained-part-three">about redirections</a></li>
