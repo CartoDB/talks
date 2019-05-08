@@ -12619,18 +12619,17 @@ ff02::2 ip6-allrouters
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Silver-Searcher">Silver Searcher<a class="anchor-link" href="#Silver-Searcher">&#182;</a></h3>
+<h3 id="Silver-Searcher">Silver Searcher<a class="anchor-link" href="#Silver-Searcher">&#182;</a></h3><p>The <a href="https://github.com/ggreer/the_silver_searcher">Silver Searcher</a>, quick find anything on your code</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1"># The Silver Searcher, quick find anything on your code</span>
-<span class="c1"># https://github.com/ggreer/the_silver_searcher</span>
-ag betis ~/src/carto/help
+<div class=" highlight hl-bash"><pre><span></span>ag betis ~/src/carto/help
 </pre></div>
 
 </div>
@@ -12669,6 +12668,167 @@ ag betis ~/src/carto/help
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># accessing a simple URL</span>
+curl http://numbersapi.com/8/26
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>August 26th is the day in 1977 that the Charter of the French Language is adopted by the National Assembly of Quebec.</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># making a POST request with a Content Type header</span>
+curl --data <span class="s1">&#39;{&quot;q&quot;:&quot;select user&quot;}&#39;</span> --header <span class="s2">&quot;content-type:application/json&quot;</span> https://jsanz.carto.com/api/v2/sql
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#34;rows&#34;:[{&#34;user&#34;:&#34;cartodb_publicuser_029cd392-0d6a-471d-83d1-f13ded9648d7&#34;}],&#34;time&#34;:0.007,&#34;fields&#34;:{&#34;user&#34;:{&#34;type&#34;:&#34;name&#34;}},&#34;total_rows&#34;:1}</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># making a HEAD request</span>
+curl --head https://jsanz.carto.com/api/v2/sql?q<span class="o">=</span><span class="k">select</span>+user
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 07 May 2019 21:55:45 GMT
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: X-Requested-With, X-Prototype-Version, X-CSRF-Token, Authorization
+Carto-Rate-Limit-Limit: 81
+Carto-Rate-Limit-Remaining: 80
+Carto-Rate-Limit-Reset: 0
+vary: Authorization
+X-SQLAPI-Log: {&#34;request&#34;:{&#34;sql&#34;:{&#34;type&#34;:&#34;query&#34;,&#34;sql&#34;:&#34;select user&#34;}}}
+Content-Disposition: inline; filename=cartodb-query.json; modification-date=&#34;Tue, 07 May 2019 21:55:45 GMT&#34;;
+Cache-Control: no-cache,max-age=31536000,must-revalidate,public
+Last-Modified: Tue, 07 May 2019 21:55:45 GMT
+X-SQLAPI-Profiler: {&#34;authorization&#34;:1,&#34;getConnectionParams&#34;:2,&#34;queryExplain&#34;:7,&#34;eventedQuery&#34;:2,&#34;beforeSink&#34;:1,&#34;total&#34;:13}
+X-Varnish: 1041547196
+Age: 0
+X-Cache: MISS
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># formatting the result using python3</span>
+curl -s --data <span class="s1">&#39;{&quot;q&quot;:&quot;select user&quot;}&#39;</span> --header <span class="s2">&quot;content-type:application/json&quot;</span> <span class="se">\</span>
+https://jsanz.carto.com/api/v2/sql <span class="se">\</span>
+<span class="p">|</span> python3 -m json.tool
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{
+    &#34;rows&#34;: [
+        {
+            &#34;user&#34;: &#34;cartodb_publicuser_029cd392-0d6a-471d-83d1-f13ded9648d7&#34;
+        }
+    ],
+    &#34;time&#34;: 0.002,
+    &#34;fields&#34;: {
+        &#34;user&#34;: {
+            &#34;type&#34;: &#34;name&#34;
+        }
+    },
+    &#34;total_rows&#34;: 1
+}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12676,6 +12836,420 @@ ag betis ~/src/carto/help
 <h2 id="Handling-data">Handling data<a class="anchor-link" href="#Handling-data">&#182;</a></h2>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="jq">jq<a class="anchor-link" href="#jq">&#182;</a></h3><p><a href="https://stedolan.github.io/jq/">jq</a> is a JSON processor, more advance that just pretty printing a result</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># just formatting the output</span>
+curl -s --data <span class="s1">&#39;{&quot;q&quot;:&quot;select cartodb_id, scalerank, featurecla, name, worldcity from populated_places limit 5&quot;}&#39;</span> --header <span class="s2">&quot;content-type:application/json&quot;</span> <span class="se">\</span>
+https://jsanz.carto.com/api/v2/sql &gt; /tmp/data.json
+cat /tmp/data.json <span class="p">|</span> jq .
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">{
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;rows&#34;</span><span class="ansi-bold">: </span><span class="ansi-bold">[
+    </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;cartodb_id&#34;</span><span class="ansi-bold">: </span>2338<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scalerank&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;featurecla&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Populated place&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Kwekwe&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;worldcity&#34;</span><span class="ansi-bold">: </span>0<span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;cartodb_id&#34;</span><span class="ansi-bold">: </span>2339<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scalerank&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;featurecla&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Populated place&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Plumtree&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;worldcity&#34;</span><span class="ansi-bold">: </span>0<span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;cartodb_id&#34;</span><span class="ansi-bold">: </span>2340<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scalerank&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;featurecla&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Populated place&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Beitbridge&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;worldcity&#34;</span><span class="ansi-bold">: </span>0<span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;cartodb_id&#34;</span><span class="ansi-bold">: </span>2341<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scalerank&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;featurecla&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Populated place&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Gwanda&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;worldcity&#34;</span><span class="ansi-bold">: </span>0<span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;cartodb_id&#34;</span><span class="ansi-bold">: </span>2342<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scalerank&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;featurecla&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Populated place&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Chiredzi&#34;</span><span class="ansi-bold">,
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;worldcity&#34;</span><span class="ansi-bold">: </span>0<span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">
+  </span><span class="ansi-bold">]</span><span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;time&#34;</span><span class="ansi-bold">: </span>0.003<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;fields&#34;</span><span class="ansi-bold">: </span><span class="ansi-bold">{
+    </span><span class="ansi-blue-intense-fg ansi-bold">&#34;cartodb_id&#34;</span><span class="ansi-bold">: </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;type&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;number&#34;</span><span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scalerank&#34;</span><span class="ansi-bold">: </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;type&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;number&#34;</span><span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-blue-intense-fg ansi-bold">&#34;featurecla&#34;</span><span class="ansi-bold">: </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;type&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;string&#34;</span><span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;type&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;string&#34;</span><span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+    </span><span class="ansi-blue-intense-fg ansi-bold">&#34;worldcity&#34;</span><span class="ansi-bold">: </span><span class="ansi-bold">{
+      </span><span class="ansi-blue-intense-fg ansi-bold">&#34;type&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;number&#34;</span><span class="ansi-bold">
+    </span><span class="ansi-bold">}</span><span class="ansi-bold">
+  </span><span class="ansi-bold">}</span><span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;total_rows&#34;</span><span class="ansi-bold">: </span>5<span class="ansi-bold">
+</span><span class="ansi-bold">}</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># processing the results to show only the names</span>
+cat /tmp/data.json <span class="p">|</span> jq <span class="s2">&quot;.rows[].name&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-green-fg">&#34;Kwekwe&#34;</span>
+<span class="ansi-green-fg">&#34;Plumtree&#34;</span>
+<span class="ansi-green-fg">&#34;Beitbridge&#34;</span>
+<span class="ansi-green-fg">&#34;Gwanda&#34;</span>
+<span class="ansi-green-fg">&#34;Chiredzi&#34;</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># generate a new JSON with custom properties</span>
+cat /tmp/data.json <span class="p">|</span> jq <span class="s2">&quot;.rows[] | {id: .cartodb_id, scale: .scalerank, name: .name}&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">{
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;id&#34;</span><span class="ansi-bold">: </span>2338<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scale&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Kwekwe&#34;</span><span class="ansi-bold">
+</span><span class="ansi-bold">}</span>
+<span class="ansi-bold">{
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;id&#34;</span><span class="ansi-bold">: </span>2339<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scale&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Plumtree&#34;</span><span class="ansi-bold">
+</span><span class="ansi-bold">}</span>
+<span class="ansi-bold">{
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;id&#34;</span><span class="ansi-bold">: </span>2340<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scale&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Beitbridge&#34;</span><span class="ansi-bold">
+</span><span class="ansi-bold">}</span>
+<span class="ansi-bold">{
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;id&#34;</span><span class="ansi-bold">: </span>2341<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scale&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Gwanda&#34;</span><span class="ansi-bold">
+</span><span class="ansi-bold">}</span>
+<span class="ansi-bold">{
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;id&#34;</span><span class="ansi-bold">: </span>2342<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;scale&#34;</span><span class="ansi-bold">: </span>7<span class="ansi-bold">,
+  </span><span class="ansi-blue-intense-fg ansi-bold">&#34;name&#34;</span><span class="ansi-bold">: </span><span class="ansi-green-fg">&#34;Chiredzi&#34;</span><span class="ansi-bold">
+</span><span class="ansi-bold">}</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="json2csv">json2csv<a class="anchor-link" href="#json2csv">&#182;</a></h3><p><a href="https://www.npmjs.com/package/json2csv">https://www.npmjs.com/package/json2csv</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>cat /tmp/data.json <span class="p">|</span> jq <span class="s2">&quot;.rows[]&quot;</span> <span class="p">|</span> json2csv &gt; /tmp/data.csv
+cat /tmp/data.csv
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&#34;cartodb_id&#34;,&#34;scalerank&#34;,&#34;featurecla&#34;,&#34;name&#34;,&#34;worldcity&#34;
+2338,7,&#34;Populated place&#34;,&#34;Kwekwe&#34;,0
+2339,7,&#34;Populated place&#34;,&#34;Plumtree&#34;,0
+2340,7,&#34;Populated place&#34;,&#34;Beitbridge&#34;,0
+2341,7,&#34;Populated place&#34;,&#34;Gwanda&#34;,0
+2342,7,&#34;Populated place&#34;,&#34;Chiredzi&#34;,0</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="csvkit">csvkit<a class="anchor-link" href="#csvkit">&#182;</a></h3><p><a href="https://csvkit.readthedocs.io/en/latest/">https://csvkit.readthedocs.io/en/latest/</a></p>
+<ul>
+<li><code>csvclean</code>: fix common CSV problems</li>
+<li><code>csvcut</code>: remove columns</li>
+<li><code>csvgrep</code>: filtering data</li>
+<li><code>csvjoin</code>: join two CSVs by a given column</li>
+<li><code>csvjson</code>: generate json or GeoJSON</li>
+<li><code>csvlook</code>: pretty print CSV</li>
+<li><code>csvstat</code>: basic statistics</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># convert to CSV and pretty print the table</span>
+cat /tmp/data.csv <span class="p">|</span> csvlook
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>| cartodb_id | scalerank | featurecla      | name       | worldcity |
+| ---------- | --------- | --------------- | ---------- | --------- |
+|      2.338 |         7 | Populated place | Kwekwe     |     False |
+|      2.339 |         7 | Populated place | Plumtree   |     False |
+|      2.340 |         7 | Populated place | Beitbridge |     False |
+|      2.341 |         7 | Populated place | Gwanda     |     False |
+|      2.342 |         7 | Populated place | Chiredzi   |     False |
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>cat /tmp/data.csv <span class="p">|</span> csvgrep -c <span class="m">4</span> -m tree <span class="p">|</span> csvlook
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>| cartodb_id | scalerank | featurecla      | name     | worldcity |
+| ---------- | --------- | --------------- | -------- | --------- |
+|      2.339 |         7 | Populated place | Plumtree |     False |
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>cat /tmp/data.csv <span class="p">|</span> csvstat
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  1. &#34;cartodb_id&#34;
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         5
+	Smallest value:        2.338
+	Largest value:         2.342
+	Sum:                   11.700
+	Mean:                  2.340
+	Median:                2.340
+	StDev:                 1,581
+	Most common values:    2.338 (1x)
+	                       2.339 (1x)
+	                       2.340 (1x)
+	                       2.341 (1x)
+	                       2.342 (1x)
+
+  2. &#34;scalerank&#34;
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         1
+	Smallest value:        7
+	Largest value:         7
+	Sum:                   35
+	Mean:                  7
+	Median:                7
+	StDev:                 0
+	Most common values:    7 (5x)
+
+  3. &#34;featurecla&#34;
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         1
+	Longest value:         15 characters
+	Most common values:    Populated place (5x)
+
+  4. &#34;name&#34;
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         5
+	Longest value:         10 characters
+	Most common values:    Kwekwe (1x)
+	                       Plumtree (1x)
+	                       Beitbridge (1x)
+	                       Gwanda (1x)
+	                       Chiredzi (1x)
+
+  5. &#34;worldcity&#34;
+
+	Type of data:          Boolean
+	Contains null values:  False
+	Unique values:         1
+	Most common values:    False (5x)
+
+Row count: 5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12720,12 +13294,14 @@ autojump carto-python
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Translator using several providers</span>
 <span class="c1"># https://github.com/soimort/translate-shell</span>
-trans -brief <span class="s1">&#39;cuando se despertó, el dinosaurio aún estaba allí&#39;</span>
+trans -brief es:en <span class="s1">&#39;cuando se despertó, el dinosaurio aún estaba allí&#39;</span>
+trans -brief es:cat <span class="s1">&#39;cuando se despertó, el dinosaurio aún estaba allí&#39;</span>
+trans -brief es:zh+ja <span class="s1">&#39;cuando se despertó, el dinosaurio aún estaba allí&#39;</span>
 </pre></div>
 
 </div>
@@ -12743,6 +13319,9 @@ trans -brief <span class="s1">&#39;cuando se despertó, el dinosaurio aún estab
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-cyan-intense-fg ansi-bold">When he woke up, the dinosaur was still there</span>
+<span class="ansi-cyan-intense-fg ansi-bold">quan es va despertar, el dinosaure encara hi era</span>
+<span class="ansi-cyan-intense-fg ansi-bold">当他醒来时，恐龙还在那里</span>
+<span class="ansi-cyan-intense-fg ansi-bold">彼が目を覚ましたとき、恐竜はまだそこにいました</span>
 </pre>
 </div>
 </div>
