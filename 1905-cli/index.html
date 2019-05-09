@@ -11862,7 +11862,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># pipe the result of a command into another</span>
@@ -11896,7 +11896,7 @@ cat /etc/hosts <span class="p">|</span> grep localhost
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># write the contents of a command results into a file (overwriting)</span>
@@ -11919,6 +11919,9 @@ cat /etc/hosts &gt; /tmp/myhosts
 <li><code>!!</code> executes the previous command</li>
 <li><code>CTL + L</code> clean the screen (same as executing <code>clear</code> command)</li>
 <li><code>CTL + A</code>, <code>CTL + E</code>: go to the begin/end of the line</li>
+<li><code>CTL + W</code>, <code>CTL + U</code>: remove the previous word or the everything before the cursor</li>
+<li><code>fc</code> will open an editor with the last command, useful for editing long ones</li>
+<li><code>!$</code> will replace by the last parameter of your last command</li>
 </ul>
 
 </div>
@@ -11926,7 +11929,7 @@ cat /etc/hosts &gt; /tmp/myhosts
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Show system info</span>
@@ -11958,7 +11961,7 @@ uname -a
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Show the current user</span>
@@ -11990,7 +11993,7 @@ whoami
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Show the current directory</span>
@@ -12022,7 +12025,7 @@ whoami
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Show the current date</span>
@@ -12043,7 +12046,7 @@ date +%F<span class="se">\ </span>%T
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2019-05-09 15:37:41
+<pre>2019-05-09 17:24:50
 </pre>
 </div>
 </div>
@@ -12054,7 +12057,7 @@ date +%F<span class="se">\ </span>%T
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Print a variable</span>
@@ -12086,7 +12089,7 @@ date +%F<span class="se">\ </span>%T
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Print disk status</span>
@@ -12111,11 +12114,11 @@ df -h <span class="p">|</span> grep -v loop
 udev                         7,8G     0  7,8G   0% /dev
 tmpfs                        1,6G  1,8M  1,6G   1% /run
 /dev/mapper/ubuntu--vg-root  424G  297G  106G  74% /
-tmpfs                        7,8G  263M  7,6G   4% /dev/shm
+tmpfs                        7,8G  189M  7,7G   3% /dev/shm
 tmpfs                        5,0M  4,0K  5,0M   1% /run/lock
 tmpfs                        7,8G     0  7,8G   0% /sys/fs/cgroup
 /dev/sda1                    472M  184M  265M  41% /boot
-tmpfs                        1,6G   56K  1,6G   1% /run/user/1000
+tmpfs                        1,6G   60K  1,6G   1% /run/user/1000
 /dev/fuse                    250G  1,0K  250G   1% /run/user/1000/keybase/kbfs
 </pre>
 </div>
@@ -12127,7 +12130,7 @@ tmpfs                        1,6G   56K  1,6G   1% /run/user/1000
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Print usage</span>
@@ -12206,7 +12209,7 @@ du: cannot read directory &#39;/home/jsanz/media/carto/postgres_data/9.5/main&#3
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Find processes</span>
@@ -12217,18 +12220,56 @@ ps aux <span class="p">|</span> grep unclutter
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>jsanz     2161  0.0  0.0  10948   916 ?        S    09:14   0:00 /bin/sh -c <span class="ansi-red-intense-fg ansi-bold">unclutter</span>
+jsanz     2162  0.0  0.0  30944  2708 ?        S    09:14   0:00 <span class="ansi-red-intense-fg ansi-bold">unclutter</span>
+jsanz    11039  0.0  0.0  17728  1128 pts/0    R+   17:24   0:00 grep --color=auto <span class="ansi-red-intense-fg ansi-bold">unclutter</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Send a kill signal to the unclutter processs</span>
-<span class="nb">kill</span> -9 <span class="m">2010</span>
+<span class="nb">kill</span> -9 <span class="m">2162</span>
 ps aux <span class="p">|</span> grep unclutter
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>jsanz    11053  0.0  0.0  17728  1048 pts/0    S+   17:25   0:00 grep --color=auto <span class="ansi-red-intense-fg ansi-bold">unclutter</span>
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12244,7 +12285,7 @@ ps aux <span class="p">|</span> grep unclutter
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># You can do for loops</span>
@@ -12283,7 +12324,7 @@ Welcome 5
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># If structures... and much more</span>
@@ -12336,7 +12377,7 @@ Welcome 5
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Counting lines, words, and characters</span>
@@ -12368,7 +12409,7 @@ wc /etc/hosts
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Usually we only want the lines</span>
@@ -12400,7 +12441,7 @@ wc -l /etc/hosts
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Print the beginning of a file</span>
@@ -12436,7 +12477,7 @@ head -n5 /etc/hosts
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Same with the end</span>
@@ -12472,7 +12513,7 @@ tail -n5 /etc/hosts
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Combining pipes with wc to count how many files are in a folder</span>
@@ -12513,7 +12554,7 @@ ls /var/log/*.log* <span class="se">\</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Finding all files inside a folder based in their names and types</span>
@@ -12547,7 +12588,7 @@ find /var/log -type f -name <span class="s2">&quot;*log*&quot;</span> <span clas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Finding and deleting</span>
@@ -12578,7 +12619,7 @@ find /tmp/ -name <span class="s2">&quot;.DS_Store&quot;</span> -type f -delete <
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Finding and executing a command (count lines in gitignore files)</span>
@@ -12586,6 +12627,47 @@ find ~/src/carto -name <span class="s2">&quot;.gitignore&quot;</span> -type f -e
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>13 /home/jsanz/src/carto/blog/.gitignore
+1 /home/jsanz/src/carto/carto-workshop/.gitignore
+3 /home/jsanz/src/carto/carto-workshop/06-sdks/exercises/python_SDK/.gitignore
+3 /home/jsanz/src/carto/onpremises/.gitignore
+2 /home/jsanz/src/carto/onpremises/omnibus/.gitignore
+1 /home/jsanz/src/carto/onpremises/doc/.gitignore
+8 /home/jsanz/src/carto/product-updates/.gitignore
+2 /home/jsanz/src/carto/customer_success/projects/infogroup/.gitignore
+1 /home/jsanz/src/carto/customer_success/projects/cushman_wakefield/201611_office_locations/.gitignore
+1 /home/jsanz/src/carto/customer_success/outreach/tech_touch/.gitignore
+55 /home/jsanz/src/carto/solutions/.gitignore
+4 /home/jsanz/src/carto/solutions/onprem/ssh/.gitignore
+2 /home/jsanz/src/carto/solutions/doc/.gitignore
+12 /home/jsanz/src/carto/help/.gitignore
+1 /home/jsanz/src/carto/help/glossary_download/.gitignore
+2 /home/jsanz/src/carto/talks/.gitignore
+12 /home/jsanz/src/carto/talks/resources/reveal.js/reveal.js-3.5.0/.gitignore
+1 /home/jsanz/src/carto/support/src/followups/.gitignore
+89 /home/jsanz/src/carto/support/src/metrics/.gitignore
+2 /home/jsanz/src/carto/support/.gitignore
+92 /home/jsanz/src/carto/support/guides/import-sql-api-test/.gitignore
+9 /home/jsanz/src/carto/support/guides/mobile_test/src/.gitignore
+1 /home/jsanz/src/carto/support/guides/mobile_test/src/app/.gitignore
+39 /home/jsanz/src/carto/Reveal/.gitignore
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12606,7 +12688,7 @@ find ~/src/carto -name <span class="s2">&quot;.gitignore&quot;</span> -type f -e
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Print comments in the hosts file</span>
@@ -12646,7 +12728,7 @@ sed -n -e <span class="s1">&#39;/\#.*/p&#39;</span> /etc/hosts
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Remove comments and then remove blank lines</span>
@@ -12697,7 +12779,7 @@ ff02::2 ip6-allrouters
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ag betis ~/src/carto/help
@@ -12742,7 +12824,7 @@ ff02::2 ip6-allrouters
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># accessing a simple URL</span>
@@ -12763,7 +12845,7 @@ curl http://numbersapi.com/8/26
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>August 26th is the day in 1978 that Sigmund Jähn becomes first German cosmonaut, on board Soyuz 31.</pre>
+<pre>August 26th is the day in 1821 that the University of Buenos Aires, Argentina, is officially opened.</pre>
 </div>
 </div>
 
@@ -12773,7 +12855,7 @@ curl http://numbersapi.com/8/26
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># making a POST request with a Content Type header</span>
@@ -12797,7 +12879,7 @@ https://jsanz.carto.com/api/v2/sql
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#34;rows&#34;:[{&#34;user&#34;:&#34;cartodb_publicuser_029cd392-0d6a-471d-83d1-f13ded9648d7&#34;}],&#34;time&#34;:0.007,&#34;fields&#34;:{&#34;user&#34;:{&#34;type&#34;:&#34;name&#34;}},&#34;total_rows&#34;:1}</pre>
+<pre>{&#34;rows&#34;:[{&#34;user&#34;:&#34;cartodb_publicuser_029cd392-0d6a-471d-83d1-f13ded9648d7&#34;}],&#34;time&#34;:0.008,&#34;fields&#34;:{&#34;user&#34;:{&#34;type&#34;:&#34;name&#34;}},&#34;total_rows&#34;:1}</pre>
 </div>
 </div>
 
@@ -12807,7 +12889,7 @@ https://jsanz.carto.com/api/v2/sql
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># making a HEAD request</span>
@@ -12832,7 +12914,7 @@ https://jsanz.carto.com/api/v2/sql?q<span class="o">=</span><span class="k">sele
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>HTTP/1.1 200 OK
 Server: openresty
-Date: Thu, 09 May 2019 13:37:48 GMT
+Date: Thu, 09 May 2019 15:25:34 GMT
 Content-Type: application/json; charset=utf-8
 Connection: keep-alive
 Vary: Accept-Encoding
@@ -12843,11 +12925,11 @@ Carto-Rate-Limit-Remaining: 80
 Carto-Rate-Limit-Reset: 0
 vary: Authorization
 X-SQLAPI-Log: {&#34;request&#34;:{&#34;sql&#34;:{&#34;type&#34;:&#34;query&#34;,&#34;sql&#34;:&#34;select user&#34;}}}
-Content-Disposition: inline; filename=cartodb-query.json; modification-date=&#34;Thu, 09 May 2019 13:37:48 GMT&#34;;
+Content-Disposition: inline; filename=cartodb-query.json; modification-date=&#34;Thu, 09 May 2019 15:25:34 GMT&#34;;
 Cache-Control: no-cache,max-age=31536000,must-revalidate,public
-Last-Modified: Thu, 09 May 2019 13:37:48 GMT
-X-SQLAPI-Profiler: {&#34;authorization&#34;:1,&#34;getConnectionParams&#34;:1,&#34;init&#34;:1,&#34;queryExplain&#34;:5,&#34;eventedQuery&#34;:1,&#34;beforeSink&#34;:2,&#34;total&#34;:11}
-X-Varnish: 65864067
+Last-Modified: Thu, 09 May 2019 15:25:34 GMT
+X-SQLAPI-Profiler: {&#34;authorization&#34;:2,&#34;getConnectionParams&#34;:1,&#34;getUserTimeoutLimits&#34;:1,&#34;queryExplain&#34;:6,&#34;eventedQuery&#34;:2,&#34;beforeSink&#34;:1,&#34;total&#34;:13}
+X-Varnish: 52190654
 Age: 0
 X-Cache: MISS
 
@@ -12861,7 +12943,7 @@ X-Cache: MISS
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># formatting the result using python3</span>
@@ -12892,7 +12974,7 @@ https://jsanz.carto.com/api/v2/sql <span class="se">\</span>
             &#34;user&#34;: &#34;cartodb_publicuser_029cd392-0d6a-471d-83d1-f13ded9648d7&#34;
         }
     ],
-    &#34;time&#34;: 0.002,
+    &#34;time&#34;: 0.004,
     &#34;fields&#34;: {
         &#34;user&#34;: {
             &#34;type&#34;: &#34;name&#34;
@@ -12927,7 +13009,7 @@ https://jsanz.carto.com/api/v2/sql <span class="se">\</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># just formatting the output</span>
@@ -13021,7 +13103,7 @@ cat /tmp/data.json <span class="p">|</span> jq .
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># processing the results to show only the names</span>
@@ -13058,7 +13140,7 @@ cat /tmp/data.json <span class="se">\</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># generate a new JSON with custom properties</span>
@@ -13115,7 +13197,7 @@ cat /tmp/data.json <span class="se">\</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># combining with other tools</span>
@@ -13169,7 +13251,7 @@ tpl_05f7c3cb_7faf_4397_80af_82918208096b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>cat /tmp/data.json <span class="p">|</span> jq <span class="s2">&quot;.rows[]&quot;</span> <span class="se">\</span>
@@ -13225,7 +13307,7 @@ cat /tmp/data.csv
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># convert to CSV and pretty print the table</span>
@@ -13264,7 +13346,7 @@ cat /tmp/data.csv <span class="se">\</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>cat /tmp/data.csv <span class="se">\</span>
@@ -13299,7 +13381,7 @@ cat /tmp/data.csv <span class="se">\</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>cat /tmp/data.csv <span class="p">|</span> csvstat
@@ -13401,7 +13483,7 @@ Row count: 5
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># ogrinfo presents an overview of a layer from a data source: type, extent, SRS, schema, etc</span>
@@ -13474,7 +13556,7 @@ type: String (0.0)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># ogr2ogr processes and converts a datasource between different formats</span>
@@ -13496,7 +13578,7 @@ ogr2ogr <span class="se">\</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ogrinfo -summary /tmp/flights_first.gpkg flights_first <span class="se">\</span>
@@ -13575,7 +13657,7 @@ Extent: (-122.137000, 37.709900) - (-122.137000, 37.709900)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>duc ls ~/media/carto <span class="p">|</span> head
@@ -13632,7 +13714,7 @@ Extent: (-122.137000, 37.709900) - (-122.137000, 37.709900)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Translator using several providers</span>
@@ -13676,7 +13758,7 @@ trans -brief es:zh+ja <span class="s1">&#39;cuando se despertó, el dinosaurio a
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Pretty print source code</span>
@@ -13754,6 +13836,34 @@ pygmentize -g /home/jsanz/src/sdks/carto-python/carto/fields.py
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="one-liners">one liners<a class="anchor-link" href="#one-liners">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1"># Get the top ten commands from your history</span>
+<span class="c1"># (you may have to change the column index in my case was $3)</span>
+
+<span class="nb">history</span> <span class="se">\</span>
+<span class="p">|</span> awk <span class="s1">&#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &quot; &quot; CMD[a]/count*100 &quot;% &quot; a;}&#39;</span> <span class="se">\</span>
+<span class="p">|</span> grep -v <span class="s2">&quot;./&quot;</span> <span class="se">\</span>
+<span class="p">|</span> column -c3 -s <span class="s2">&quot; &quot;</span> -t <span class="se">\</span>
+<span class="p">|</span> sort -nr <span class="se">\</span>
+<span class="p">|</span> nl <span class="se">\</span>
+<span class="p">|</span> head -n10
+</pre></div>
+<p><img src="http://i.imgur.com/t6kye5B.png" alt=""></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
