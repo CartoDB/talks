@@ -11855,6 +11855,62 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Piping-and-redirections">Piping and redirections<a class="anchor-link" href="#Piping-and-redirections">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># pipe the result of a command into another</span>
+cat /etc/hosts <span class="p">|</span> grep localhost
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>127.0.0.1	<span class="ansi-red-intense-fg ansi-bold">localhost</span>
+::1     ip6-<span class="ansi-red-intense-fg ansi-bold">localhost</span> ip6-loopback
+127.0.1.1 cartodb.<span class="ansi-red-intense-fg ansi-bold">localhost</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># write the contents of a command results into a file (overwriting)</span>
+cat /etc/hosts &gt; /tmp/myhosts
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Basic-commands">Basic commands<a class="anchor-link" href="#Basic-commands">&#182;</a></h2><ul>
 <li>Remember you can use the arrow keys to browse your history.</li>
 <li>The <code>HISTSIZE</code> environment variable defines the size of your history.</li>
@@ -12216,62 +12272,6 @@ Welcome 5
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Piping-and-redirections">Piping and redirections<a class="anchor-link" href="#Piping-and-redirections">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1"># pipe the result of a command into another</span>
-cat /etc/hosts <span class="p">|</span> grep localhost
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>127.0.0.1	<span class="ansi-red-intense-fg ansi-bold">localhost</span>
-::1     ip6-<span class="ansi-red-intense-fg ansi-bold">localhost</span> ip6-loopback
-127.0.1.1 cartodb.<span class="ansi-red-intense-fg ansi-bold">localhost</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1"># write the contents of a command results into a file (overwriting)</span>
-cat /etc/hosts &gt; /tmp/myhosts
-</pre></div>
-
-</div>
 </div>
 </div>
 
